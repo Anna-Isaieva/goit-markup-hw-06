@@ -394,8 +394,8 @@ input {
    FEATURES - MOBILE
 ========================= */
 
-.features-container {
-  padding: 96px 16px;
+.features {
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -432,7 +432,6 @@ input {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
-
 }
 
 .features p {
@@ -472,6 +471,11 @@ input {
 ========================= */
 
 @media screen and (min-width: 1158px) {
+
+  .features {
+    padding: 120px 0;
+  }
+
   .features-item {
      width: calc((100% - 72px) / 4);
   }
@@ -490,22 +494,7 @@ input {
       border: 1px solid #8E8F99;
       border-radius: 4px;
   }
-
-  .features h3 {
-    color: #2E2F42;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    text-align: left;
-  }
-
-  .features p {
-    font-weight: 400;
-  }
-    
-    
+     
   .features-icon {
     display: block;
   }
@@ -533,14 +522,10 @@ input {
    TEAM - MOBILE
 ========================= */
 
-.team-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
 .team {
   background-color: #F4F4FD;
   margin: 0 auto;
+  padding: 96px 0;
 }
 
 .team h2 {
@@ -647,6 +632,10 @@ input {
 
 @media screen and (min-width: 1158px) {
 
+.team {
+  padding: 120px 0;
+}
+
 .team-list {
   flex-wrap: nowrap;
   gap: 24px;
@@ -664,9 +653,8 @@ input {
    PORTFOLIO - MOBILE
 ========================= */
 
-.portfolio-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
+.portfolio {
+  padding: 96px 0;
 }
 
 .portfolio h2 {
@@ -687,7 +675,6 @@ input {
 
 .portfolio-item {
   width: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-thumb {
@@ -748,6 +735,10 @@ input {
 ========================= */
 
 @media screen and (min-width: 1158px) {
+
+.portfolio {
+  padding: 120px 0;
+}
   
 .portfolio-list {
   column-gap: 24px;
@@ -758,12 +749,12 @@ input {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus-within {
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .overlay {
   display: block;
@@ -1239,8 +1230,7 @@ input {
   transform: translate(-50%, -50%);
   opacity: 0;
 
-  width: calc(100% - 32px);
-  max-width: 392px;
+  width: 288px;
   min-height: 584px;
   max-height: calc(100% - 16px);
   overflow-y: auto;
